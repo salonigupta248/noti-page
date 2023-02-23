@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color:hsl(210, 60%, 98%) ;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    width: 700px;
+    margin: 2rem;
+    padding: 1.25rem 1.25rem;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 0.5rem;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.noti-box{
+    display: flex;
+    align-items: center;
+}
+#noti{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    width: 35px;
+    margin-left: .5rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 30px;
+    font-weight: 800;
+    border-radius: .5rem;
+}
+#mar{
+    cursor: pointer;
+}
+#mar:hover{
+    color: hsl(219, 85%, 26%);
+}
+p{
+    color:hsl(219, 12%, 42%) ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.noti-unread{
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1rem;
+
+}
+img{
+width: 50px;
+}
+.info{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+strong{
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+strong:hover{
+    color: hsl(219, 85%, 26%);
+}
+.card{
+    background-color: hsl(211, 68%, 94%);
+}
+.card p:first-of-type::after{
+content: " ";
+  background-color: hsl(1, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.message_card{
+    display: flex;
+    align-items: center;
+  
+  }
+  .msg{
+    padding: 1rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: .3rem;
+    cursor: pointer;
+    margin: 0 0 0 5rem;
+  }
+  .msg:hover{
+    background-color:hsl(205, 33%, 90%) ;
+  }
+  .chess_img{
+  margin-left: auto;
+  }
+  
+  @media screen and (max-width:550px) {
+    .container{
+      margin: 0;
+    }
+  }
